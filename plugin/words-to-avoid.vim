@@ -9,7 +9,7 @@ function! MatchTechWordsToAvoid()
     endif
 
     " Highlight matches
-    match TechWordsToAvoid /\c\<\(obviously\|basically\|simply\|of\scourse\|clearly\|\(^\|\W\)\@<=just\(\W\)\@=\(\W\)\@<!\|everyone\sknows\|however\|so,\|easy\)\>/
+    match TechWordsToAvoid /\c\(\<\(obviously\|basically\|simply\|of\scourse\|clearly\|\(^\|\W\)\@<=just\(\W\)\@=\(\W\)\@<!\|everyone\sknows\|however\||easy\)\>\)\|\(\<so,\)/
 endfunction
 
 " Set the flag to enable matches on supported filetypes
